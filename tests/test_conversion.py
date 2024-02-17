@@ -7,8 +7,7 @@ import sqlalchemy as sa
 from marshmallow import Schema, fields, validate
 from sqlalchemy.dialects import mysql, postgresql
 from sqlalchemy.orm import column_property
-
-from marshmallow_sqlalchemy import (
+from src.toasted_marshmallow_sqlalchemy import (
     ModelConversionError,
     ModelConverter,
     column2field,
@@ -16,7 +15,7 @@ from marshmallow_sqlalchemy import (
     fields_for_model,
     property2field,
 )
-from marshmallow_sqlalchemy.fields import Related, RelatedList
+from src.toasted_marshmallow_sqlalchemy.fields import Related, RelatedList
 
 
 def contains_validator(field, v_type):

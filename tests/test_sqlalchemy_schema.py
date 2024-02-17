@@ -2,10 +2,13 @@ import marshmallow
 import pytest
 import sqlalchemy as sa
 from marshmallow import Schema, ValidationError, validate
-
-from marshmallow_sqlalchemy import SQLAlchemyAutoSchema, SQLAlchemySchema, auto_field
-from marshmallow_sqlalchemy.exceptions import IncorrectSchemaTypeError
-from marshmallow_sqlalchemy.fields import Related
+from src.toasted_marshmallow_sqlalchemy import (
+    SQLAlchemyAutoSchema,
+    SQLAlchemySchema,
+    auto_field,
+)
+from src.toasted_marshmallow_sqlalchemy.exceptions import IncorrectSchemaTypeError
+from src.toasted_marshmallow_sqlalchemy.fields import Related
 
 # -----------------------------------------------------------------------------
 

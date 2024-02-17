@@ -1,10 +1,12 @@
+# This project is forked from https://github.com/marshmallow-code/marshmallow-sqlalchemy
+
 [project]
-name = "marshmallow-sqlalchemy"
+name = "toasted-marshmallow-sqlalchemy"
 version = "1.0.0"
-description = "SQLAlchemy integration with the marshmallow (de)serialization library"
+description = "SQLAlchemy integration with the toasted-marshmallow (de)serialization library, forked from marshmallow-code/marshmallow-sqlalchemy"
 readme = "README.rst"
 license = { file = "LICENSE" }
-maintainers = [{ name = "Steven Loria", email = "sloria1@gmail.com" }]
+maintainers = [{ name = "Joey Mart", email = "josefdavidmart@gmail.com" }]
 classifiers = [
   "Intended Audience :: Developers",
   "License :: OSI Approved :: MIT License",
@@ -16,19 +18,19 @@ classifiers = [
   "Programming Language :: Python :: 3.12",
 ]
 requires-python = ">=3.8"
-dependencies = ["marshmallow>=3.10.0", "SQLAlchemy>=1.4.40,<3.0"]
+dependencies = ["toastedmarshmallow>=2.15.2", "SQLAlchemy>=1.4.40,<3.0"]
 
 [project.urls]
 Changelog = "https://marshmallow-sqlalchemy.readthedocs.io/en/latest/changelog.html"
 Funding = "https://opencollective.com/marshmallow"
-Issues = "https://github.com/marshmallow-code/marshmallow-sqlalchemy/issues"
-Source = "https://github.com/marshmallow-code/marshmallow-sqlalchemy"
+Issues = "https://github.com/joeymart/toasted-marshmallow-sqlalchemy/issues"
+Source = "https://github.com/joeymart/toasted-marshmallow-sqlalchemy"
 
 [project.optional-dependencies]
 docs = ["sphinx==7.2.6", "alabaster==0.7.16", "sphinx-issues==4.0.0"]
 # TODO: Remove pytest pin when https://github.com/TvoroG/pytest-lazy-fixture/issues/65 is resolved
 tests = ["pytest<8", "pytest-lazy-fixture>=0.6.2"]
-dev = ["marshmallow-sqlalchemy[tests]", "tox", "pre-commit~=3.5"]
+dev = ["toasted-marshmallow-sqlalchemy[tests]", "tox", "pre-commit~=3.5"]
 
 [build-system]
 requires = ["flit_core<4"]
